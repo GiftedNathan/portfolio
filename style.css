@@ -1,0 +1,97 @@
+:root {
+  --title-color: #172b4d;
+  --text-color: #344563;
+  --bold-font: 700;
+  --normal-font: 400;
+  --background-color-gray: #e5e5e5;
+  --primary-color-blue: #6070ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+main {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+header .logo {
+  font-weight: var(--bold-font);
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--primary-color-blue);
+}
+
+.hero {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 160px 20px;
+}
+
+@media screen and (max-width: 648px) {
+  .hero {
+    padding: 60px 10px;
+    background-image: url("./images/header-shapes\ mobile@2x.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.hero h1 {
+  max-width: 327px;
+  min-height: 150px;
+  font-weight: var(--bold-font);
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--title-color);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-weight: var(--normal-font);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.hero .connect p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #7f8cff;
+}
+
+.hero .connect .icons {
+  display: flex;
+  align-items: center;
+}
+
+.hero .connect .icons span {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
