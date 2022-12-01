@@ -5,6 +5,7 @@
   --normal-font: 400;
   --background-color-gray: #e5e5e5;
   --primary-color-blue: #6070ff;
+  --poppins: "Poppins", "Courier New", courier, monospace;
 }
 
 * {
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', 'Courier New', Courier, monospace;
+  font-family: var(--poppins);
   font-style: normal;
   color: var(--text-color);
 }
@@ -35,6 +36,7 @@ header {
 }
 
 header .logo {
+  font-family: var(--poppins);
   font-weight: var(--bold-font);
   font-size: 18px;
   line-height: 20px;
@@ -43,7 +45,13 @@ header .logo {
   color: var(--primary-color-blue);
 }
 
+header .menu-icon {
+  cursor: pointer;
+}
+
 .hero {
+  display: flex;
+  flex-direction: column;
   max-width: 920px;
   margin: 0 auto;
   padding: 160px 20px;
@@ -61,6 +69,7 @@ header .logo {
 .hero h1 {
   max-width: 327px;
   min-height: 150px;
+  font-family: var(--poppins);
   font-weight: var(--bold-font);
   font-size: 40px;
   line-height: 52px;
@@ -69,6 +78,7 @@ header .logo {
 }
 
 .hero p {
+  font-family: var(--poppins);
   font-weight: var(--normal-font);
   font-size: 16px;
   line-height: 24px;
@@ -77,6 +87,7 @@ header .logo {
 }
 
 .hero .connect p {
+  font-family: var(--poppins);
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -87,9 +98,14 @@ header .logo {
 .hero .connect .icons {
   display: flex;
   align-items: center;
+  list-style: none;
 }
 
-.hero .connect .icons span {
+.hero .connect .icons li a {
+  text-decoration: none;
+}
+
+.hero .connect .icons img {
   height: 20px;
   width: 20px;
   margin-right: 15px;
