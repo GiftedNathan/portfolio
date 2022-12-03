@@ -5,7 +5,7 @@
   --text-color: #344563;
   --bold-font: 700;
   --normal-font: 400;
-  --background-color-gray: #e5e5e5;
+  --background-color-gray: #f7f7f9;
   --background-color-white: #fff;
   --primary-color-blue: #6070ff;
   --poppins: "Poppins", "Courier New", courier, monospace;
@@ -29,7 +29,7 @@ body {
 
 main {
   width: 100%;
-  background-color: #e5e5e5;
+  background-color: var(--background-color-gray);
 }
 
 header {
@@ -102,7 +102,7 @@ header {
   margin-bottom: 25px;
 }
 
-.connect p {
+.connect h3 {
   font-family: var(--poppins);
   font-weight: 500;
   font-size: 16px;
@@ -146,8 +146,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   margin: 60px auto;
-  padding: 30px;
-  border-radius: 24px;
+  padding: 10px;
+  border-radius: 14px;
   background-color: var(--background-color-white);
 }
 
@@ -162,7 +162,7 @@ header {
 .work-card .card-image-mobile-container {
   display: none;
   width: 100%;
-  padding: 30px;
+  padding: 10px;
 }
 
 .work-card .card-image-mobile-container .card-image-mobile {
@@ -170,16 +170,26 @@ header {
   display: none;
 }
 
+.work-card .card-content ul li {
+  margin-right: 15px;
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #7a869a;
+}
+
 .work-card .card-content {
   max-width: 544px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .work-card .card-content h2 {
   font-family: var(--poppins);
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 32px;
+  line-height: 44px;
   text-transform: capitalize;
   color: var(--text-color);
   margin-bottom: 20px;
@@ -191,11 +201,16 @@ header {
 }
 
 .work-card .card-content .name p {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-right: 30px;
+}
+
+.work-card .card-content .name ul li {
   margin-right: 30px;
 }
 
@@ -204,16 +219,6 @@ header {
   flex-wrap: wrap;
   list-style-type: disc;
   color: gray;
-}
-
-.work-card .card-content ul li {
-  margin-right: 35px;
-  font-family: var(--poppins);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #6b778c;
 }
 
 .work-card .card-content .content-text {
